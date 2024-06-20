@@ -1,12 +1,133 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="description" content="Accounting Application, Cloud Accounting, Multichannel Sales, Jualan Online">
+        <meta name="viewport" content="width=device-width,initial-scale=0.1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="detectify-verification" content="30add45ee9140155a9f4f5188be78b97"/>
+        <meta name="robots" content="noindex">
+        <link rel="icon" type="image/x-icon" href="/favicon.png" sizes="32x32">
+        <title>Jubelio</title>
+        <script src="/scripts/runtime.v0.13.5.min.js"></script>
+        <script>
+            (function(c, l, a, r, i, t, y) {
+                c[a] = c[a] || function() {
+                    (c[a].q = c[a].q || []).push(arguments)
+                }
+                ;
+                t = l.createElement(r);
+                t.async = 1;
+                t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0];
+                y.parentNode.insertBefore(t, y);
+            }
+            )(window, document, "clarity", "script", "jyge4a8wl9");
+        </script>
+        <meta name="importmap-type" content="systemjs-importmap"/>
+        <script type="systemjs-importmap">
+            {
+      "imports": {
+        "react": "/scripts/react.v17.0.2.production.min.js",
+        "react-dom": "/scripts/react-dom.v17.0.2.production.min.js",
+        "history": "/scripts/history.v5.2.0.production.min.js",
+        "react-router": "/scripts/react-router.v6.2.1.production.min.js",
+        "react-router-dom": "/scripts/react-router-dom.v6.2.1.production.min.js",
+        "single-spa": "/scripts/single-spa.v5.9.0.production.min.js",
+        "@mui/material": "/scripts/mui-material.v5.4.0.production.min.js"
+      }
+    }
+        </script>
+        <link rel="preload" href="/scripts/single-spa.v5.9.0.min.js" as="script">
+        <script>
+            const getCookieValue = (name)=>{
+                const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+                if (match) {
+                    return match[2];
+                } else {
+                    return null;
+                }
+            }
+            ;
+        </script>
+        <script>
+            (function() {
+                var src = getCookieValue("isCanary") ? "https://v2.jubelio.com/importmap.json" : "https://v2-beta.jubelio.com/importmap.json";
+                document.write('<script type="systemjs-importmap" src="' + src + '"><\/script>');
+            }
+            )();
+        </script>
+        <script src="/scripts/import-map-overrides.v2.4.2.min.js"></script>
+        <script src="/scripts/system.v6.12.1.min.js"></script>
+        <script src="/scripts/system.v6.12.1.amd.min.js"></script>
+        <script src="/scripts/system.v6.12.1.named-exports.min.js"></script>
+        <script src="/scripts/system.v6.12.1.named-register.min.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8MJTB14SJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
+            gtag('config', 'G-K8MJTB14SJ');
+        </script>
+        <script>
+            gtag('event', 'conversion', {
+                'send_to': 'AW-328395459/DTrVCPzzrJwYEMPVy5wB'
+            });
+        </script>
+        <script src="/scripts/freshchat.widget.js"></script>
+        <script>
+            function initFreshChat() {// window.fcWidget.init({
+            //   token: "a29d9925-507c-4cda-9c83-a45a82700422",
+            //   host: "https://wchat.freshchat.com"
+            // });
+            }
+            function initialize(i, t) {
+                var e;
+                i.getElementById(t) ? initFreshChat() : ((e = i.createElement("script")).id = t,
+                e.async = !0,
+                e.src = "https://cdn.wchat.freshchat.com/js/widget.js",
+                e.onload = initFreshChat,
+                i.head.appendChild(e))
+            }
+            function initiateCall() {
+                initialize(document, "freshchat-js-sdk")
+            }
+            window.addEventListener ? window.addEventListener("load", initiateCall, !1) : window.attachEvent("load", initiateCall, !1);
+        </script>
+        <style>
+            html {
+                font-size: 14px;
+            }
+
+            .container {
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        <h1>yaaa</h1>
-
-        <script>console.log("HELLO")</script>
-        <script src="https://v2.jubelio.com/wms/prd-276--88612880/jubelio-wms.js"></script>
-        <script src="https://v2.jubelio.com/purchasing/prd-103--511e9a9c/jubelio-purchasing.js"></script>
+        <script>
+            System.import('@jubelio/core-lib');
+            System.import('@jubelio/components');
+            System.import('@jubelio/root');
+            System.import('@jubelio/shell');
+            System.import('@jubelio/shared');
+            System.import('@jubelio/catalog');
+            System.import('@jubelio/inventory');
+            System.import('@jubelio/sales');
+            System.import('@jubelio/purchasing');
+            System.import('@jubelio/wms');
+            System.import('@jubelio/accounting');
+            System.import('@jubelio/web-dashboard');
+        </script>
+        <div id="shell" class="container">
+            <img style="position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);" src="/loader.svg"/>
+        </div>
+        <div id="content" class="container"></div>
+        <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"89687ca8499e4085","version":"2024.4.1","token":"2f56e4c2866c4edc9e4897de63e61fd8"}' crossorigin="anonymous"></script>
     </body>
 </html>

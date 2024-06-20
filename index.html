@@ -54,7 +54,7 @@
         <script>
             (function() {
                 var src = getCookieValue("isCanary") ? "https://v2.jubelio.com/importmap.json" : "https://v2-beta.jubelio.com/importmap.json";
-                document.write('<script type="systemjs-importmap" src="' + src + '"><\/script>');
+                document.write('<script type="systemjs-importmap" src="' + src + '" crossorigin="anonymous"><\/script>');
             }
             )();
         </script>

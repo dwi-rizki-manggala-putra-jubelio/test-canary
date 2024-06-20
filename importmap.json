@@ -1,0 +1,17 @@
+{
+    "imports": {
+        "@jubelio/accounting": "//v2.jubelio.com/accounting/prd-187-0.0.5-1c15e002/jubelio-accounting.js",
+        "@jubelio/auth": "//v2.jubelio.com/auth/prd-29-1.0.0-adf6f34a/jubelio-auth.js",
+        "@jubelio/catalog": "//v2.jubelio.com/catalog/prd-293-last2version-0a165133/jubelio-catalog.js",
+        "@jubelio/components": "//v2.jubelio.com/components/prd-277-0.0.431-5560358c/jubelio-components.js",
+        "@jubelio/core-lib": "//v2.jubelio.com/core-lib/prd-220-0.0.184-86271d7a/jubelio-core-lib.js",
+        "@jubelio/inventory": "//v2.jubelio.com/inventory/prd-233--3a7a2de2/jubelio-inventory.js",
+        "@jubelio/purchasing": "//v2.jubelio.com/purchasing/prd-103--511e9a9c/jubelio-purchasing.js",
+        "@jubelio/root": "//v2.jubelio.com/root/prd-20-0.0.13-4ce35d88/jubelio-root.js",
+        "@jubelio/sales": "//v2.jubelio.com/sales/prd-379--908e144c/jubelio-sales.js",
+        "@jubelio/shared": "//v2.jubelio.com/shared/prd-207-0.0.1-863b444c/jubelio-shared.js",
+        "@jubelio/shell": "//v2.jubelio.com/shell/prd-93-0.0.11-ca3aa45e/jubelio-shell.js",
+        "@jubelio/web-dashboard": "//v2.jubelio.com/web-dashboard/prd-13-last2version-423130d8/jubelio-web-dashboard.js",
+        "@jubelio/wms": "//v2.jubelio.com/wms/prd-282--f0e0d41b/jubelio-wms.js"
+    }
+}
